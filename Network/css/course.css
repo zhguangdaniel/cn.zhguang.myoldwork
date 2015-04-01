@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+
+#course{
+	text-align:left;
+	margin:0 auto;
+	width: 100%;
+}
+#tdTitle{/*类别标题*/
+	height:25px;
+	background-color:#BBD8F8;
+	font-size:15px;
+	font-family: "Arial", "宋体";
+	line-height:25px;
+}
+#course ul li{
+	font-size: 14px;
+}
+#course ul li a, #course ul li a:visited{
+	height:25px;
+	line-height:25px;
+	font-family: Arial, "宋体";
+	color: #000;
+	text-decoration:none;
+}
+#course ul li a:hover{
+	font-family: Arial, "宋体";
+	color: #FF9900;
+	text-decoration:none;
+}

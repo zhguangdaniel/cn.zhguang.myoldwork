@@ -1,0 +1,75 @@
+@charset "utf-8";
+.menu ul li a.hide, .menu ul li a:visited.hide {
+display:none;
+}
+.menu ul li{
+	height:30px;
+	line-height:30px;
+}
+.menu ul li a{
+	line-height:30px;
+}
+.menu ul li a:hover {
+	background:none;
+}
+.menu ul li a:hover ul {
+	display:block;
+	position:absolute;
+	top:30px;
+	left:0;
+	width:115px;
+}
+.menu ul li a:hover ul li {
+	height:30px;
+	line-height:30px;
+	border-bottom:solid 1px #FFF;
+}
+.menu ul li a:hover ul li:hover {
+	height:30px;
+}
+.menu ul li a:hover ul li a {
+	display:block;
+	background:#BBD8F8;
+	color:#006699;
+	font-size:15px;
+	text-decoration:none;
+	line-height:30px;
+	width:100%;
+	height:100%;
+}
+.menu ul li a:hover ul li a:hover {
+	display:block;
+	line-height:30px;
+	background-image:url(/images/nav.jpg);
+	color:#FF9900;
+	font-size:15px;
+	text-decoration:none;
+}
+/*导航条*/
+#nav {
+	height: 30px;
+	width: 780px;
+	margin:0 auto;
+	line-height:30px;
+	background-image:url(/images/nav.jpg);
+}
+a.nav:link {
+	color:#006699;
+	font-size:15px;
+	text-decoration: none;
+}
+a.nav:visited {
+	color:#006699;
+	font-size:15px;
+	text-decoration: none;
+}
+a.nav:hover {
+	color: #006699;
+	font-size:15px;
+	text-decoration: underline;
+}
+a.nav:active {
+	color: #006699;
+	font-size:15px;
+	text-decoration: underline;
+}

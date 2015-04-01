@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.qq.map.qqappointment.model"> 
+    <class name="Appointment" table="t_appointment">
+        <id name="id" column="ID" type="string">
+           <generator class="uuid"/>
+        </id>
+        <property name="title" column="TITLE" type="string" length="255"/>
+        <property name="type" column="TYPE" type="string" length="25"/>
+        <property name="attendeeCount" column="ATTENDEE_COUNT" type="int"/>
+        <property name="attendeeLimited" column="ATTENDEE_LIMITED" type="int"/>
+        <property name="startTime" column="START_TIME" type="java.util.Date"/>
+        <property name="endTime" column="EDN_TIME" type="java.util.Date"/>
+        <property name="address" column="ADDRESS" type="string"/>
+        <property name="longitude" column="LONGITUDE" type="string" length="64"/>
+        <property name="latitude" column="LATITUDE" type="string" length="64"/>
+        <property name="introduction" column="INTRODUCTION" type="string"/>
+        <many-to-one name="creator" column="CREATOR_ID" not-null="true"/>
+        <property name="attendType" column="ATTEND_TYPE" type="int"/>
+        <property name="status" column="STATUS" type="int"/>
+        <property name="iconUrl" column="ICON_URL" type="string" length="255" />
+        <property name="appImageUrl" column="APP_IMAGE_URL" type="string" length="255" />
+        <set name="resources" inverse="true" lazy="true" cascade="save-update">
+            <key column="APPOINTMENT_ID" />
+            <one-to-many class="Resource"/>
+        </set>
+        <set name="comments" inverse="true" lazy="true" cascade="save-update">
+            <key column="APPOINTMENT_ID" />
+            <one-to-many class="Comment"/>
+        </set>
+        <set name="attendees" table="t_app_user" inverse="true" lazy="true" cascade="save-update">
+            <key column="APPOINTMENT_ID" />
+            <many-to-many class="User" column="USER_ID"/>
+        </set>
+    </class>
+    
+</hibernate-mapping>

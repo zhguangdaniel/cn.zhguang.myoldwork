@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+._background {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    position: absolute;
+    z-index: 100;
+    background: #666666;
+    filter: Alpha(opacity = 60);
+    -moz-opacity: .6;
+    opacity: 0.6;
+}
+
+._modalWindow {
+    display: block;
+    border: #666666 1px solid;
+    z-index: 150;
+    background: #FFFFFF;
+}
+
+._modallessWindow {
+    display: block;
+    border: #666666 1px solid;
+    z-index: 50;
+    background: #FFFFFF;
+}
+
+.windowTop {
+    border-bottom: solid 1px #149303;
+    margin-left: 4px;
+    margin-right: 4px;
+    height: 20px;
+    line-height: 20px;
+    padding: 3px;
+    font-weight: bold;
+    text-align: left;
+    font-size: 12px;
+    font-family: "Arial", "宋体";
+    color: #149303;
+}
+
+.windowContent {
+    font-size: 12px;
+    text-align: left;
+    background-color: #FFFFFF;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    top: 30px;
+    right: 5px;
+    left: 5px;
+    bottom: 5px;
+}
+
+._modalWindow .closeWindowLabel {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    right: 5px;
+    top: 4px;
+    border: none;
+    cursor: pointer;
+    background: url("/image/dialogLabel.png") 0px 0px;
+}
+
+._modalWindow .closeWindowLabel:hover {
+    background-position: 0px -16px;
+}
+
+._modallessWindow .closeWindowLabel {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    right: 5px;
+    top: 4px;
+    border: none;
+    cursor: pointer;
+    background: url("/image/dialogLabel.png") 0px 0px;
+}
+
+._modallessWindow .closeWindowLabel:hover {
+    background-position: 0px -16px;
+}
+
+._modallessWindow .maximizeWindowLabel {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    right: 24px;
+    top: 4px;
+    border: none;
+    cursor: pointer;
+    background: url("/image/dialogLabel.png") -16px 0px;
+}
+
+._modallessWindow .maximizeWindowLabel:hover {
+    background-position: -16px -16px;
+}
+
+._modallessWindow .restoreWindowLabel {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    right: 24px;
+    top: 4px;
+    border: none;
+    cursor: pointer;
+    background: url("/image/dialogLabel.png") -32px 0px;
+}
+
+._modallessWindow .restoreWindowLabel:hover {
+    background-position: -32px -16px;
+}
+
+/*Window Content 中的TabPanel样式*/
+.windowContent .tabNavigation {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    height: 20px;
+    padding:0 8px;
+    z-index: 51;
+}
+
+.windowContent .tabNavigation ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.windowContent .tabNavigation li {
+    display: inline-block;
+    padding: 0;
+    float: left;
+    height: 20px;
+}
+
+.windowContent .tabNavigation li a {
+    padding: 0 10px;
+    text-align: center;
+    display: block;
+    border: 1px solid #CCCCCC;
+    color: #666666;
+    float: left;
+    line-height: 20px;
+    height: 20px;
+    margin-right: 8px;
+    text-decoration: none;
+    outline: none;
+}
+
+.windowContent .tabNavigation li a.ajaxCurrentTab {
+    border-bottom: 1px solid #FFFFFF;
+    color: #149303 !important;
+}
+
+.windowContent .tabNavigation a:hover {
+    color: #ff9900;
+}
+
+.windowContent .tabContent {
+    border: none;
+    border-top: solid 1px #CCCCCC;
+    padding: 0;
+    position:absolute;
+    top:21px;
+    right:0;
+    left:0;
+    bottom:0;
+}
+
+.uploadFileInput {
+    position: absolute;
+    cursor: pointer;
+    z-index: 51; /*调整是否覆盖 */
+    margin-left: -90px;
+    margin-top: 0px; /*调整位置 */
+    font-size: 16px; /*调整高度 */
+    filter: Alpha(opacity = 0);
+    -moz-opacity: .0;
+    opacity: 0; /*调整透明度 */
+}

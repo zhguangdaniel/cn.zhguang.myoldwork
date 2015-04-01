@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+#buleprintNav {
+	text-align: center;
+	margin: auto;
+	height: 20px;
+	width: 100%;
+	border:solid #71B8FF;
+	border-width:0 0 2px;
+}
+#blueprintFrame{
+	overflow:auto;
+	text-align:left;
+	margin:0 auto;
+	height: 640px;
+	width: 100%;
+}
+h1 {
+	font-family: "楷体_GB2312";
+	font-size: 30px;
+	font-weight: bold;
+	color: #069;
+	text-align: center;
+}
+h2 {
+	font-family: "黑体";
+	color: #00F;
+	font-size: 20px;
+	font-weight:lighter;
+}
+p {
+	font-family: Arial, "宋体";
+	font-size: 12px;
+	color: #000;
+	font-weight: normal;
+}
+ol {
+	font-family:Arial, "宋体";
+	font-size: 16px;
+	font-weight: bold;
+	color: #8080C0;
+}
+
+ul li{
+	font-family: Arial, "宋体";
+	font-size: 14px;
+	color: #000;
+}
+td {
+	font-family: Arial, "宋体";
+	font-size: 12px;
+	color: #000;
+}

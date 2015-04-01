@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+
+.msgFrame {
+	margin-bottom:20px;
+	text-align:center;
+}
+.replyFrame {
+	font-family:Arial, "宋体";
+	font-size:13px;
+	color:#505050;
+	text-align:left;
+	width:100%;
+	margin:0 auto;
+	padding-left:20px;
+	display:none;
+}
+.msgInfo {
+	font-family:Arial, "宋体";
+	font-size:13px;
+	border-bottom:solid 1px #CCC;
+	height:30px;
+	line-height:30px;
+	text-align:left;
+	margin:0px 10px 5px;
+}
+.msgText {
+	font-family:Arial, "宋体";
+	font-size:13px;
+	margin:0px 10px 0px;
+	text-align:left;
+	color:#505050;
+}
+.replyInfo {
+	font-family:Arial, "宋体";
+	font-size:13px;
+	height:30px;
+	line-height:30px;
+	margin:5px 10px 5px 30px;
+	text-align:left;
+}
+.replyText {
+	font-family:Arial, "宋体";
+	font-size:13px;
+	text-align:left;
+	margin:5px 10px 0px 30px;
+	color:#006699
+}
+.editMsgFrame {
+	font-family:Arial, "宋体";
+	font-size:13px;
+	color:#505050;
+	text-align:left;
+}
+.errMsgFrame {
+	font-family:Arial, "宋体";
+	font-size:13px;
+	color:#F00;
+	text-align:left;
+}

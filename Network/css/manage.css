@@ -1,0 +1,302 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {/*整个主体*/
+	font:100% Arial, "宋体";
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	width:100%;
+	height: 100%;
+}
+a{
+	outline:none;
+}
+img{
+	outline:none;
+}
+#container {/*页面容器*/
+	height: 670px;
+	width: 1000px;
+	margin:0 auto;
+	margin-top:30px;
+	text-align:center;
+}
+#header {
+	margin: 0 auto;
+	height: 120px;
+	width: 100%;
+	background-image:url(/images/bannerManage.jpg);
+	border:solid #069;
+	border-width:0 0 2px;
+	text-align:right;
+}
+#headerButton {
+	height:30px;
+	width:400px;
+	border:0;
+	text-align:center;
+	margin:auto;
+	float:right;
+	margin-top:89px;
+}
+
+#headerButton ul {
+	padding:0;
+	margin:0;
+	list-style-type: none;
+}
+#headerButton ul li {
+	display:block;
+	float:left;
+	margin-right:5px;
+	width:100px;
+	height:30px;
+	line-height:30px;
+}
+
+#headerButton ul li a{
+	display:block;
+	background-image:url(/images/button.jpg);
+	text-decoration:none;
+	color: #1B25F3;
+	font-size:15px;
+}
+#headerButton ul li a:hover {
+	background-image:url(/images/buttonHover.jpg);
+	color: #F60;
+	text-decoration: none;
+}
+#bottom {
+	width:998px;
+	height:50px;
+	border:solid 1px #069;
+	text-align:center;
+	margin:0 auto;
+	margin-top:10px;
+	background-color:#9ACCF8;
+	clear:both;
+}
+/*主信息区，分为左（leftMain）右（rightMain）两部分*/
+#mainContent {
+	margin-top:8px;
+	height:470px;
+	width:1000px;
+	text-align:left;
+}
+#leftMenu {
+	height:470px;
+	width:150px;
+	margin-right:8px;
+	float:left;
+	border:solid 1px #069;
+}
+#rightMain {
+	height:470px;
+	width:838px;
+	float:right;
+	border:solid 1px #069;
+	overflow:auto;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+#bar {/*所有区域的头部*/
+	height:30px;
+	text-align: left;
+	font-size: 14px;
+	font-family: "Arial", "宋体";
+	color:#1B25F3;
+	margin:0 auto;
+	background-color:#9ACCF8;
+	line-height:30px;
+}
+#blackText {/*正文*/
+	font-family: "Arial", "宋体";
+	font-size:12px;
+	color:#000;
+	font-weight:lighter;
+}
+#blueText {
+	font-family: "Arial", "宋体";
+	font-size:12px;
+	color:#006699;
+	font-weight:lighter;
+	text-decoration:none;
+}
+#tipsText {
+	font-family: "Arial", "宋体";
+	font-size:12px;
+	color:#999;
+	font-weight:bold;
+}
+#errorText {/*出错信息*/
+	font-family: "Arial", "宋体";
+	font-size:12px;
+	color:#F00;
+	font-weight:lighter;
+}
+/*主信息区的信息链接条*/
+a.blackText:link {
+	font-family: "Arial", "宋体";
+	font-size:12px;
+	color:#000;
+	font-weight:lighter;
+	text-decoration:none;
+}
+a.blackText:visited {
+	font-family: "Arial", "宋体";
+	font-size:12px;
+	color:#808080;
+	font-weight:lighter;
+	text-decoration:none;
+}
+a.blackText:hover {
+	color: #F60;
+	font-family: "Arial", "宋体";
+	font-size:12px;
+	font-weight:lighter;
+	text-decoration:none;
+}
+a.blueText:link {
+	font-family: "Arial", "宋体";
+	font-size:12px;
+	color:#069;
+	font-weight:lighter;
+	text-decoration:none;
+}
+a.blueText:visited {
+	font-family: "Arial", "宋体";
+	font-size:12px;
+	color: #AAA;
+	font-weight:lighter;
+	text-decoration: none;
+}
+a.blueText:hover {
+	color: #F60;
+	font-family: "Arial", "宋体";
+	font-size:12px;
+	font-weight:lighter;
+	text-decoration: none;
+}
+a.emailText{
+	font-family: "Arial", "宋体";
+	font-size:12px;
+	color: #999;
+	font-weight:lighter;
+	text-decoration: underline;
+}
+a.emailText:hover {
+	color: #F60;
+	font-family: "Arial", "宋体";
+	font-size:12px;
+	font-weight:lighter;
+	text-decoration: underline;
+}
+#date {
+	font-family: "Arial", "宋体";
+	font-size:12px;
+	color:#006699;
+	font-weight:lighter;
+	text-decoration:none;
+}
+/*普通链接*/
+a.normalLink:link {
+	font-size: 12px;
+	font-family: "Arial", "宋体";
+	color:#006699;
+	text-decoration:underline;
+}
+a.normalLink:visited {
+	font-size: 12px;
+	font-family: "Arial", "宋体";
+	color:#006699;
+	text-decoration:underline;
+}
+a.normalLink:hover {
+	font-size: 12px;
+	font-family: "Arial", "宋体";
+	color: #F60;
+	text-decoration:underline;
+}
+/*登录框内容*/
+#loginFrame {
+	width:300px;
+	height:300px;
+	margin:0 auto;
+	margin-top:100px;
+}
+.loginMsgFrame {
+	width:250px;
+	height:16px;
+	font-weight:lighter;
+	text-align:left;
+	margin:0 auto;
+}
+.loginAfficheFrame {
+	width:260px;
+	height:100%;
+	color:#999;
+	font-family:Arial, "宋体";
+	font-size:12px;
+	text-align:left;
+	margin-top:10px;
+	margin-left:20px;
+	margin-right:20px;
+}
+img {
+	border:0;
+}
+#websiteInfo{
+	width:500px;
+	font-family:Arial, "宋体";
+	font-size:12px;
+	text-align:center;
+	margin:0 auto;
+	margin-top:30px;
+	border:solid 1px #AAA;
+	overflow:auto;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+.versionHistory{
+	font-family:Arial, "宋体";
+	font-size:12px;
+	text-align:center;
+	margin:0 auto;
+	overflow:auto;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+.defaultPageFrame{
+	margin:auto;
+	text-align:center;
+}
+.defaultPageTitle{
+	font-family:Arial, "宋体";
+	font-size:15px;
+	font-weight:bold;
+	color:#0c4437;
+	border-bottom: dashed 1px #CCC;
+	height:30px;
+	line-height:30px;
+	text-align:left;
+	margin:auto;
+	margin:0px 10px 0px;
+}
+.defaultPageContent{
+	font-family:Arial, "宋体";
+	font-size:13px;
+	margin:auto;
+	margin:0px 20px 20px;
+	text-align:left;
+	color:#505050;
+}
+.publishAfficheFrame{
+	font-family:Arial, "宋体";
+	font-size:13px;
+	color:#000000;
+	text-align:left;
+	margin:0 auto;
+	margin-left:20px;
+	display:none;
+}

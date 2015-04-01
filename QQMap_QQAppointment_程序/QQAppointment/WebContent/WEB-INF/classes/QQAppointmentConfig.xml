@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config>
+	<dao id="userDao" type="com.qq.map.qqappointment.dao.UserDAO" />
+	<dao id="appointmentDao" type="com.qq.map.qqappointment.dao.AppointmentDAO" />
+	<dao id="appUserPairDao" type="com.qq.map.qqappointment.dao.AppUserPairDAO" />
+	<dao id="resourceDao" type="com.qq.map.qqappointment.dao.ResourceDAO" />
+	<dao id="commentDao" type="com.qq.map.qqappointment.dao.CommentDAO" />
+</config>

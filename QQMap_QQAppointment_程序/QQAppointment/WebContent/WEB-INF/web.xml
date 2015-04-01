@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>QQAppointment</display-name>
+
+	<filter>
+		<filter-name>encodingFilter</filter-name>
+		<filter-class>com.qq.map.qqappointment.servlet.EncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>utf-8</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>encodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<filter>
+		<filter-name>noCacheFilter</filter-name>
+		<filter-class>com.qq.map.qqappointment.servlet.ForceNoCacheFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>noCacheFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<filter>
+		<filter-name>hibernateFilter</filter-name>
+		<filter-class>com.qq.map.qqappointment.servlet.HibernateFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>hibernateFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/jsp/error/pageNotFound.html</location>
+	</error-page>
+	<session-config>
+		<session-timeout>30</session-timeout>
+	</session-config>
+<!-- DoAddAppointmentServlet -->
+    <servlet>
+        <servlet-name>DoAddAppointmentServlet</servlet-name>
+        <servlet-class>com.qq.map.qqappointment.servlet.DoAddAppointmentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DoAddAppointmentServlet</servlet-name>
+        <url-pattern>/doAddAppointment</url-pattern>
+    </servlet-mapping>
+    <!-- DoUserAttendAppointmentServlet -->
+     <servlet>
+        <servlet-name>DoUserAttendAppointmentServlet</servlet-name>
+        <servlet-class>com.qq.map.qqappointment.servlet.DoUserAttendAppointmentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DoUserAttendAppointmentServlet</servlet-name>
+        <url-pattern>/doAttendAppointment</url-pattern>
+    </servlet-mapping>
+    <!-- DoAddResourceServlet -->
+         <servlet>
+        <servlet-name>DoAddResourceServlet</servlet-name>
+        <servlet-class>com.qq.map.qqappointment.servlet.DoAddResourceServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DoAddResourceServlet</servlet-name>
+        <url-pattern>/doAddResource</url-pattern>
+    </servlet-mapping>
+    <!-- DoAddCommentServlet -->
+             <servlet>
+        <servlet-name>DoAddCommentServlet</servlet-name>
+        <servlet-class>com.qq.map.qqappointment.servlet.DoAddCommentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DoAddCommentServlet</servlet-name>
+        <url-pattern>/doAddComment</url-pattern>
+    </servlet-mapping>
+    <!-- DoGetAllAppointmentServlet -->
+    
+                 <servlet>
+        <servlet-name>DoGetAllAppointmentServlet</servlet-name>
+        <servlet-class>com.qq.map.qqappointment.servlet.DoGetAllAppointmentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DoGetAllAppointmentServlet</servlet-name>
+        <url-pattern>/doGetAllAppointment</url-pattern>
+    </servlet-mapping>
+    <!-- DoGetAppointmentResourceServlet -->
+                     <servlet>
+        <servlet-name>DoGetAppointmentResourceServlet</servlet-name>
+        <servlet-class>com.qq.map.qqappointment.servlet.DoGetAppointmentResourceServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DoGetAppointmentResourceServlet</servlet-name>
+        <url-pattern>/doGetAppointmentResource</url-pattern>
+    </servlet-mapping>
+    <!-- DoGetAppointmentCommentServlet -->  
+                       <servlet>
+        <servlet-name>DoGetAppointmentCommentServlet</servlet-name>
+        <servlet-class>com.qq.map.qqappointment.servlet.DoGetAppointmentCommentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DoGetAppointmentCommentServlet</servlet-name>
+        <url-pattern>/doGetAppointmentComment</url-pattern>
+    </servlet-mapping>
+    <!-- DoGetRealTimeCommentServlet -->
+                           <servlet>
+        <servlet-name>DoGetRealTimeCommentServlet</servlet-name>
+        <servlet-class>com.qq.map.qqappointment.servlet.DoGetRealTimeCommentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DoGetRealTimeCommentServlet</servlet-name>
+        <url-pattern>/doGetRealTimeComment</url-pattern>
+    </servlet-mapping>
+	<!-- Login -->
+	<servlet>
+		<servlet-name>DoLoginServlet</servlet-name>
+		<servlet-class>com.qq.map.qqappointment.servlet.DoLoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DoLoginServlet</servlet-name>
+		<url-pattern>/doLogin</url-pattern>
+	</servlet-mapping>
+	<!-- Logout -->
+	<servlet>
+		<servlet-name>DoLogoutServlet</servlet-name>
+		<servlet-class>com.qq.map.qqappointment.servlet.DoLogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DoLogoutServlet</servlet-name>
+		<url-pattern>/doLogout</url-pattern>
+	</servlet-mapping>
+	<!-- Regist -->
+	<servlet>
+		<servlet-name>DoRegisterServlet</servlet-name>
+		<servlet-class>com.qq.map.qqappointment.servlet.DoRegisterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DoRegisterServlet</servlet-name>
+		<url-pattern>/doRegist</url-pattern>
+	</servlet-mapping>
+	<!-- Upload Icon -->
+	<servlet>
+		<servlet-name>DoUploadImageServlet</servlet-name>
+		<servlet-class>com.qq.map.qqappointment.servlet.DoUploadImageServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DoUploadImageServlet</servlet-name>
+		<url-pattern>/uploadImage</url-pattern>
+	</servlet-mapping>
+	<!-- Get vcode -->
+	<servlet>
+		<servlet-name>GetVcodeServlet</servlet-name>
+		<jsp-file>/jsp/vcode/image.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetVcodeServlet</servlet-name>
+		<url-pattern>/vcode</url-pattern>
+	</servlet-mapping>
+</web-app>

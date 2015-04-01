@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+#contentHeader a{
+	display: inline-block;
+	height:30px;
+	line-height:30px;
+}
+#contentButton {
+	top:-50%; 
+	height:25px;
+	width:120px;
+	border:0;
+	text-align:center;
+	line-height:25px;
+}
+#contentButton ul {
+	padding:0;
+	margin:0;
+	list-style-type: none;
+}
+#contentButton ul li {
+	display:block;
+	float:left;
+	width:100px;
+	height:25px;
+	line-height:25px;
+}
+#contentButton ul li a:hover {
+	color: #F60;
+	text-decoration: none;
+	height:25px;
+	line-height:25px;
+	background-image:url(/old_1/images/buttonContentHover.jpg);
+}
+#contentButton ul li a{
+	display:block;
+	text-decoration:none;
+	color:#069;
+	font-size:13px;
+	height:25px;
+	line-height:25px;
+	background-image:url(/old_1/images/buttonContent.jpg);
+}

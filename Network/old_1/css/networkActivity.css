@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+
+#activity{
+	overflow:auto;
+	text-align:left;
+	margin:0 auto;
+	height: 640px;
+	width: 100%;
+}

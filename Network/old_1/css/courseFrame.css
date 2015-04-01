@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+.coursesList ul{
+	margin:0 auto;
+	padding-left:10px;
+	padding-right:10px;
+}
+.coursesList ul li{
+	height:23px;
+	font-size: 12px;
+	line-height:23px;
+	list-style:url(/old_1/images/activityManage.png) inside;
+}
+.coursesList ul li a,.coursesList  ul li a:visited{
+	font-family: Arial, "宋体";
+	color: #505050;
+	font-size:12px;
+	text-decoration:none;
+}
+.coursesList ul li a:hover{
+	font-family: Arial, "宋体";
+	color: #FF9900;
+	font-size:12px;
+	text-decoration:none;
+}

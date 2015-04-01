@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document：后台管理左菜单*/
+
+#menu {
+	height:470px;
+	width:150px;;
+	background-color:#9ACCF8;
+}
+#menu ul {
+	padding:0;
+	margin:0;
+	list-style-type: none;
+}
+#menu ul li{
+	display:block;
+	margin-bottom:3px;
+	width:150px;
+	height:30px;
+	text-align: left;
+	line-height:30px;
+}
+
+#menu ul li a{
+	display: block;
+	text-decoration:none;
+	color: #1B25F3;
+	font-size:15px;
+	padding-left:30px;
+	height:30px;
+	line-height:30px;
+	overflow:hidden;
+	background-image:url(/images/button.jpg);	
+}
+#menu ul li a:hover{
+	background-image:url(/images/buttonHover.jpg);
+	color: #F60;
+	text-decoration: none;
+	overflow:hidden;
+}

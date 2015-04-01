@@ -1,0 +1,206 @@
+@charset "utf-8";
+/* CSS Document，后台管理页面中rightMain区域的样式 */
+
+#contentFrame {
+	width:100%;
+	height:438px;
+	overflow: auto;
+}
+#contentHeader {
+	width:100%;
+	height:30px;
+	display:table;
+	line-height:30px;
+	text-align:left;
+	font-size:12px;
+	font-family:"Arial", "宋体";
+	color: #000;
+	border-bottom:solid 2px #71B8FF;
+}
+
+#tempContentHeader {
+	vertical-align:middle;
+	display:table-cell;
+	height:30px;
+	top:50%;
+}
+#contentButton {
+	top:-50%; 
+	height:25px;
+	width:120px;
+	border:0;
+	text-align:center;
+	line-height:25px;
+	float:right;
+	margin-right:10px;
+}
+#contentButton ul {
+	padding:0;
+	margin:0;
+	list-style-type: none;
+}
+#contentButton ul li {
+	display:block;
+	float:left;
+	width:100px;
+	background-image:url(/old_1/images/buttonContent.jpg);
+}
+#contentButton ul li:hover {
+	background-image:url(/old_1/images/buttonContentHover.jpg);
+}
+#contentButton ul li a, #contentButton ul li a:visited {
+	display:block;
+	text-decoration:none;
+	color:#069;
+	font-size:13px;
+}
+#contentButton ul li:hover a {
+	/*鼠标位于菜单一上时，a的属性变为*/
+	color: #F60;
+	text-decoration: none;
+}
+#summary {
+	font-size:12px;
+	font-family: "Arial", "宋体";
+	color:#AAA;
+	text-align:left;
+	line-height:20px;
+}
+#pageCtrlFrame {
+	height:20px;
+	text-align:center;
+	border: dashed #71B8FF;
+	border-width:1px 0 0;
+	margin-top:8px;
+}
+a.itemName:link {
+	font-size:14px;
+	font-family: "Arial", "宋体";
+	color: #000;
+	font-weight: normal;
+	text-decoration:none;
+}
+a.itemName:visited {
+	font-size:14px;
+	font-family: "Arial", "宋体";
+	color: #000;
+	font-weight: normal;
+	text-decoration:none;
+}
+a.itemName:hover {
+	font-size:14px;
+	font-family: "Arial", "宋体";
+	color: #F60;
+	text-decoration:none;
+}
+#title {
+	font-family: Arial, "黑体";
+	font-size:20px;
+	color:#006699;
+	font-weight: normal;
+}
+#articleInfo {/*作者，发表时间等信息*/
+	font-family: "Arial", "宋体";
+	font-size:12px;
+	color:#006699;
+	font-weight:lighter;
+}
+#bottomTips {
+	color:#999999;
+	font-family: Arial, "宋体";
+	font-size:12px;
+	font-weight:normal;
+}
+#titleFrame {
+	width:800px;
+	height:40px;
+	font-family: "Arial", "宋体";
+	font-size:13px;
+	color: #000;
+	padding-left:3px;
+	line-height:40px;
+}
+#articleBottom {
+	width:790px;
+	height:30px;
+	font-family: "Arial", "宋体";
+	font-size:13px;
+	color: #000;
+	padding-left:3px;
+	line-height:30px;
+}
+.errMsgFrame {
+	width:300px;
+	height:25px;
+	line-height:25px;
+	font-weight:lighter;
+	text-align:left;
+	margin:0 auto;
+	font-family:Arial, "宋体";
+	font-size:12px;
+	color:#F00;
+}
+.modifyArticleFrame {
+	width:750px;
+	height:20px;
+	font-family:Arial, "宋体";
+	font-size:12px;
+	text-align:left;
+	font-weight:normal;
+	color:#999;
+	padding-left:43px;
+}
+#fileTitle {
+	font-size:14px;
+	font-family: "Arial", "宋体";
+	color: #000;
+	font-weight: normal;
+	text-decoration:none;
+}
+#uploadFrame {
+	width:400px;
+	margin:0 auto;
+	margin-top:50px;
+	border:solid 1px #ccc;
+}
+.fileDescription {
+	width:360px;
+	height:70px;
+	font-family:Arial, '宋体';
+	font-size:12px;
+}
+a.customLink:link, a.customLink:visited {
+	font-size:14px;
+	font-family: "Arial", "宋体";
+	color: #1B25F3;
+	font-weight: normal;
+	text-decoration:none;
+}
+a.customLink:hover {
+	font-size:14px;
+	font-family: "Arial", "宋体";
+	color: #F60;
+	text-decoration:none;
+}
+.linksEditFrame {
+	width:100%;
+	text-align:left;
+	margin:0 auto;
+	font-family:Arial, "宋体";
+	font-size:12px;
+	padding-left:20px;
+	display:none;
+}
+.addLinkFrame {
+	width:580px;
+	text-align:left;
+	margin:0 auto;
+	font-family:Arial, "宋体";
+	font-size:12px;
+	padding-left:20px;
+	display:none;
+	border:solid 1px #AAA;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-bottom:10px;
+}

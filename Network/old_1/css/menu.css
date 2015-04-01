@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* CSS Document */
+.menu {
+	/*整个菜单的大的框架*/
+	font-family: Arial, "宋体";
+	font-size:15px;
+	position: relative;/*位置为相对的*/
+	height:30px;
+	line-height:30px;/*对象的行高。即字体最底端与字体内部顶端之间的距离。*/
+	margin:auto;
+}
+.menu ul li a, .menu ul li a:visited {
+	/*在menu-ul-li(即菜单一)下a和a:visited的样式*/
+	display:block;/*下拉菜单用一个块显示*/
+	text-decoration:none;
+	color:#006699;/*字体颜色*/
+	font-size:15px;
+	overflow:hidden;
+}
+.menu ul {
+	padding:0;
+	margin:0;
+	list-style-type: none;
+}
+.menu ul li {
+	position:relative;
+	height:30px;
+	line-height:30px;
+}
+.menu ul li ul {
+	/*下拉菜单1.1暂时不显示*/
+	display: none;
+}
+.menu ul li a:hover {
+	/*鼠标位于菜单一上时，a的属性变为*/
+	color: #006699;
+	height:30px;
+	line-height:30px;
+	background: none;
+	text-decoration: underline;
+}
+.menu ul li:hover ul {
+	/*鼠标位于菜单一上时，下一级ul的属性变为*/
+	display:block;
+	position:absolute;
+	top:30px;
+	left:0;
+	width:100%;
+}
+.menu ul li:hover ul li {
+	border:solid #FFF;
+	border-width:0 0 1px;
+	height:30px;
+	line-height:30px;
+}
+.menu ul li:hover ul li a {
+	background:#BBD8F8;
+	color:#006699;
+	font-size:15px;
+	height:30px;
+	line-height:30px;
+	text-decoration:none;
+}
+.menu ul li:hover ul li a:hover {
+	background-image:url(/old_1/images/nav.jpg);
+	color:#FF9900;
+	font-size:15px;
+	text-decoration:none;
+}
+/*导航条*/
+#nav {
+	height: 30px;
+	width: 780px;
+	margin:0 auto;
+	line-height:30px;
+	background-image:url(/old_1/images/nav.jpg);
+}
+a.nav:link {
+	color:#006699;
+	font-size:15px;
+	text-decoration: none;
+}
+a.nav:visited {
+	color:#006699;
+	font-size:15px;
+	text-decoration: none;
+}
+a.nav:hover {
+	color: #006699;
+	font-size:15px;
+	text-decoration: underline;
+}
+a.nav:active {
+	color: #006699;
+	font-size:15px;
+	text-decoration: underline;
+}
+
