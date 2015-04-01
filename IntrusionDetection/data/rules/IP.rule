@@ -1,0 +1,3 @@
+Alert TCP any any -> any any ( content:"pass",nocase; ) Msg:"Detect password"
+Alert TCP any any -> any any ( content:"user",nocase; ) Msg:"Detect UserName"
+Alert TCP any any -> 172.18.59.210 143 ( content:" |E8C0FFFFFF|"; flags:a; ) Msg:" IMAP Buffer Overflow"

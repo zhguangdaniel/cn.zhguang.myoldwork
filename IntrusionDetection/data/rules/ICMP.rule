@@ -1,0 +1,2 @@
+Alert ICMP any any -> any any ( itype:0; ) Msg:"Ping"
+Alert ICMP any any -> any any ( itype:8; ) Msg:"Ping"
